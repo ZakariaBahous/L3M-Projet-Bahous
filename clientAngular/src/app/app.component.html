@@ -1,0 +1,23 @@
+<!doctype html>
+<body>
+<h1>{{ title }}</h1>
+<form id="secretaire" name="input" action="/" method="POST">
+  <input value="Secretaire" type="hidden" name="login" />
+  <input type="submit" value="Connectez vous en tant que secrétaire"/>
+</form>
+<form id="infirmier" name="input" action="/infirmiereLocale" method="POST">
+  <div>Connectez vous en tant qu'infirmier</div>
+  <span class="login">
+				Identifiant :
+				<input list="logins" type="text" name="id" />
+			</span>
+  <datalist id="logins">
+  </datalist>
+  <input type="submit" value="Connection"/>
+</form>
+</body>
+<app-secretary></app-secretary>
+<app-patient></app-patient>
+<app-infirmier></app-infirmier>
+
+

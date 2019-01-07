@@ -286,13 +286,13 @@ for(let i=2; i<process.argv.length; i++) {
     params[p[0]] = p[1];
 }
 
-const port					= params["port"]      			  || "8090"
+const port					= params["port"]      			  || "4200"
     , applicationServerIP	= params["applicationServerIP"]   || "127.0.0.1"
     , applicationServerPort	= params["applicationServerPort"] || "8080"
 ;
 console.log(`Usage :
     node staticServeur.js [port:PORT]
-    Default port is 8090.
+    Default port is 4200.
     Current port is ${port}
 `);
 console.log("HTTP server listening on port ", port);
